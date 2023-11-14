@@ -5,17 +5,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-image: url(https://images7.alphacoders.com/904/904942.png);
-    background-repeat: no-repeat;
+    
 }
 
-body {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    
-    
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.alphacoders.com/133/1336393.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .login-box {
@@ -23,12 +31,13 @@ body {
     width: 400px;
     height: 450px;
     background:transparent;
+    border: rgba(255, 255, 255, .0);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-style: solid;
-    filter: blur(20%);
+    backdrop-filter: blur(15px);
     
     border-color: #fff;
     
@@ -113,16 +122,44 @@ body {
     border: none;
     outline: none;
     border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight:500;
 }
 
-/* p, a {
+.register-link {
+    font-size: 1em;
     color: #fff;
-} */ 
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+}
 
 
-/* .navbar {
+.navbar {
     padding-top: 1em;
     justify-content: center;
     display: flex;
+    background: transparent;
     
-} */
+}
