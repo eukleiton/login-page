@@ -11,19 +11,25 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
-<header class="navbar">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="img\faveicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Bootstrap
-              </a>
-            </div>
-          </nav>
-    </header>
-    <hr>
 
 <body>
+
+    <header class="navbar">
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+              <h5 class="text-body-emphasis h4">Collapsed content</h5>
+              <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </header>
+
     <section>
         <div class="login-box">
             <form action>
