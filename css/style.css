@@ -5,9 +5,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
-    
+
+
 }
+
+body {
+    background: url(https://images.alphacoders.com/133/1336393.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+    
+
+}
+
+/* @keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+} */
 
 section {
     display: flex;
@@ -15,17 +30,17 @@ section {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url(https://images.alphacoders.com/133/1336393.png) no-repeat;
+    /* background: url(https://images.alphacoders.com/133/1336393.png) no-repeat;
     background-size: cover;
     background-position: center;
-    animation: animateBg 5s linear infinite;
+    animation: animateBg 5s linear infinite; */
 }
 
-@keyframes animateBg {
+/* @keyframes animateBg {
     100% {
         filter: hue-rotate(360deg);
     }
-}
+} */
 
 .login-box {
     position: relative;
@@ -39,16 +54,16 @@ section {
     align-items: center;
     border-style: solid;
     backdrop-filter: blur(15px);
-    
+
     border-color: #fff;
-    
-   
+
+
 }
 .login-name {
     font-size: 2em;
     color:#fff;
     text-align: center;
-    
+
 }
 
 .input-box {
@@ -72,7 +87,7 @@ section {
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-    
+
 }
 
 .input-box input {
@@ -84,7 +99,7 @@ section {
     font-size: 1em;
     color: #fff;
     padding: 0 35px 0 5px;
-    
+
 }
 
 .input-box .icon {
@@ -140,7 +155,7 @@ section {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    
+
 }
 
 .register-link p a:hover {
@@ -161,7 +176,20 @@ section {
     padding-top: 1em;
     justify-content: center;
     display: flex;
-    background: black;
-    border: rgba(255, 255, 255, .0);
     
+    border: rgba(255, 255, 255, .0);
+
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.rodape {
+    color: white;
+    text-align: center;
 }
