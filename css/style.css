@@ -24,7 +24,7 @@
         filter: hue-rotate(360deg);
     }
 } */
-
+/* IMAGEM COMO BACKGROUND */
 section  {
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ section  {
     background-position: center;
     animation: animateBg 5s linear infinite;
 }
-
+/* MUDAR DE COR  */
 @keyframes animateBg {
     100% {
         filter: hue-rotate(360deg);
